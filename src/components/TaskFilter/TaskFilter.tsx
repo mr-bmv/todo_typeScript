@@ -35,7 +35,7 @@ export const TaskFilter: React.FC = () => {
   };
 
   return (
-    <div className="task-filter d-flex">
+    <div className="task-filter d-flex" data-testid="task-filter-elem">
       <div className="btn-group">
         <button
           type="button"

@@ -5,7 +5,7 @@ const SearchTask: FC = () => {
   const { getSearchTask } = useTaskList();
 
   return (
-    <form className="form-group">
+    <form className="form-group" data-testid="search-task-elem">
       <input
         type="email"
         className="form-control"

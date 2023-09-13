@@ -23,7 +23,9 @@ const NewTask: React.FC = () => {
   };
 
   return (
-    <form className="new-task d-flex" onSubmit={onSubmit}>
+    <form className="new-task d-flex"
+    data-testid="new-task-elem"
+    onSubmit={onSubmit}>
       <input
         type="text"
         className="form-control"

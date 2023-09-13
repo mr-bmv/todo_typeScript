@@ -6,7 +6,7 @@ const Header: React.FC = () => {
   const { activeQTY, doneQTY } = useTaskList();
 
   return (
-    <div className="header d-flex">
+    <div className="header d-flex" data-testid="header-elem" >
       <h1>Task List</h1>
       <h3>
         {activeQTY()} more to do, {doneQTY()} closed

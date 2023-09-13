@@ -17,7 +17,9 @@ export const TaskList = () => {
     })
 
     return (
-        <ul className="list-group task-list">
+        <ul className="list-group task-list"
+            data-testid="list-group-elem"
+        >
             {content}
         </ul>
     )
