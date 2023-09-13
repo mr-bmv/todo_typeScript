@@ -1,46 +1,36 @@
-# Getting Started with Create React App
+# ToDo App with Hooks using TypeScript
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[<img src="./assets/mainView.png" width="480" height="550"/>](https://601279a523448fad5d30c789--hooks-to-do-application.netlify.app)
 
-## Available Scripts
 
-In the project directory, you can run:
+## Functional
 
-### `npm start`
+This project is a list with different tasks. Quantity of all tasks and closed tasks shown in up-header.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Filter Panel
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Task list could be filtered by using `"All"`/`"Closed"`/`"Active"`/`"Removed"` buttons in top of application. In this case just filtered tasks would be shown in the list.
 
-### `npm test`
+### Search Panel
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Task could be found by using `"Search Task"` input field.
+Letter case doesn't matter for matching.
 
-### `npm run build`
+### Add new Task Panel
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+New task could be added by `"Put new task here..."` field and this task would be added into all task list.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Task List
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Any task could be:
+- mark like Important by using **"!"** button in each task. If task marked like important it have bold yellow color.
 
-### `npm run eject`
+- deleted from main list by using **"Trash"** button im each task.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- mark like closed or done by click on each title of task. If task marked like closer/done it have crossed out line through tasks title.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Clean Removed Tasks
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Removed tasks could be turn back by using **"Back Arrow"** button in "Removed" list for required task.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+All removed tasks could be cleaned from project by using `"Clean Removed Tasks"`.
